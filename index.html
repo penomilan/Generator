@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SSG</title>
+    <link rel="stylesheet" type="text/css" href="css/generator.css">
+</head>
+
+<body>
+    <h1>Static Site Generator</h1>
+    <p>Enter basic info for Your web page and click on <strong>"Generate"</strong>.</p>
+    <p>Title:
+        <input type="text" id="inputTitle" style="width: 35%;" value="demo" />
+    </p>
+    <p>Image:
+        <input type="text" id="inputImage" style="width: 35%;" value="http://via.placeholder.com/350x150" />
+    </p>
+    <p>Description:
+        <input type="text" id="inputDescription" style="width: 35%;" value="Put description of the web page here ..." />
+    </p>
+    <p>Background color:
+        <input type="text" id="color" value="white">
+    </p>
+    <button onclick="generate()">Generate</button>
+    <div>
+        <p>Generated source code:</p>
+        <textarea style="width: 70%; height: 400px;" id="result" disabled>The generated source code will be displayed here!</textarea>
+    </div>
+    <button onclick="download()">Download</button>
+    <script type="text/javascript" src="js/generator.js"></script>
+</body>
