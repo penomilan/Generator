@@ -8,9 +8,10 @@
 
 <body>
     <h1>Static Site Generator</h1>
-    <p>Enter basic info for Your web page and click on <strong>"Generate"</strong>.</p>
+    <div id="inputs">
+    <p><i>Enter basic info for Your web page and click on <strong>"Generate"</strong>.</i></p>
     <p>Title:
-        <input type="text" id="inputTitle" style="width: 35%;" value="demo" />
+        <input type="text" id="inputTitle" style="width: 35%;" value="Demo" />
     </p>
     <p>Image:
         <input type="text" id="inputImage" style="width: 35%;" value="http://via.placeholder.com/350x150" />
@@ -21,11 +22,19 @@
     <p>Background color:
         <input type="text" id="color" value="white">
     </p>
-    <button onclick="generate()">Generate</button>
+    <button id="btngen" onclick="generate()">Generate</button>
+</div>
     <div>
         <p>Generated source code:</p>
-        <textarea style="width: 70%; height: 400px;" id="result" disabled>The generated source code will be displayed here!</textarea>
+        <textarea style="width: 80%; height: 300px;" id="result" disabled>The generated source code will be displayed here!</textarea>
     </div>
-    <button onclick="download()">Download</button>
+    <div id="download">
+        <p><i>If you like this generated code, and want to save it, click on <strong>"Download"</strong> button.</i></p>
+    <button id="btndownload" onclick="download()">Download</button>
+</div>
+<div id="separator"></div>
+<footer>
+    <p>&copy;MILANPENO2017</p>
+</footer>
     <script type="text/javascript" src="js/generator.js"></script>
 </body>

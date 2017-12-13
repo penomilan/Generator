@@ -1,0 +1,38 @@
+body {
+	font-family: sans-serif;
+	background-color: whitesmoke;
+	text-align: center;
+}
+h1 {
+	background-color: #e6e6e6;
+	padding: 3%;
+}
+#inputs {
+	
+}
+#download {
+	padding-bottom: 10%;
+}
+#btndownload {
+	background-color: #99ff99;
+	color: #006600;
+	text-decoration: blink;
+	width: 120px;
+	height: 30px;
+	outline-style: ridge;
+}
+#btngen {
+	background-color: #ffff00;
+	width: 120px;
+	height: 30px;
+}
+footer {
+	color: #cccccc;
+	padding-top: 2%;
+}
+#separator {
+	background-color: #cccccc;
+	height: 1px;
+	width: 100%;
+
+}
