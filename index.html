@@ -3,38 +3,47 @@
 
 <head>
     <title>SSG</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="css/generator.css">
 </head>
 
 <body>
-    <h1>Static Site Generator</h1>
-    <div id="inputs">
+    <div class="container-fluid" id="header">
+    <h1>STATIC SITE GENERATOR</h1>
+        <h4><i>Generate code with Bootstrap and jQuery included from a CDN.</i></h4>
+    </div>
+    <div class="container-fluid" id="inputs">
     <p><i>Enter basic info for Your web page and click on <strong>"Generate"</strong>.</i></p>
     <p>Title:
-        <input type="text" id="inputTitle" style="width: 35%;" value="Demo" />
+        <input type="text" id="inputTitle" style="width: 60%;" value="Demo" />
     </p>
     <p>Image:
-        <input type="text" id="inputImage" style="width: 35%;" value="http://via.placeholder.com/350x150" />
+        <input type="text" id="inputImage" style="width: 60%;" value="http://via.placeholder.com/350x150" />
     </p>
     <p>Description:
-        <input type="text" id="inputDescription" style="width: 35%;" value="Put description of the web page here ..." />
+        <input type="text" id="inputDescription" style="width: 60%;" value="Put description of the web page here ..." />
     </p>
     <p>Background color:
-        <input type="text" id="color" value="white">
+        <input type="text" id="color" value="white" style="width:60%">
     </p>
-    <button id="btngen" onclick="generate()">Generate</button>
+    <button type="button" class="btn btn-info" id="btngen" onclick="generate()">Generate</button>
 </div>
-    <div>
+    <div class="container-fluid" id="code">
         <p>Generated source code:</p>
         <textarea style="width: 80%; height: 300px;" id="result" disabled>The generated source code will be displayed here!</textarea>
     </div>
-    <div id="download">
+    <div class="container-fluid" id="download">
         <p><i>If you like this generated code, and want to save it, click on <strong>"Download"</strong> button.</i></p>
-    <button id="btndownload" onclick="download()">Download</button>
+    <button type="button" class="btn btn-success" id="btndownload" onclick="download()">Download</button>
 </div>
 <div id="separator"></div>
 <footer>
-    <p>&copy;MILANPENO2017</p>
+    <p>&copy;2017 MilanPeno</p>
 </footer>
     <script type="text/javascript" src="js/generator.js"></script>
 </body>

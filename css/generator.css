@@ -1,17 +1,18 @@
 body {
 	font-family: sans-serif;
-	background-color: whitesmoke;
+	background-image: url("../img/generator.jpg");
 	text-align: center;
-}
-h1 {
-	background-color: #e6e6e6;
-	padding: 3%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #inputs {
-	
+	text-align: center;
+    padding-top: 3%;
+    color: whitesmoke;
 }
 #download {
 	padding-bottom: 10%;
+    color: whitesmoke;
 }
 #btndownload {
 	background-color: #99ff99;
@@ -19,12 +20,12 @@ h1 {
 	text-decoration: blink;
 	width: 120px;
 	height: 30px;
-	outline-style: ridge;
 }
 #btngen {
 	background-color: #ffff00;
 	width: 120px;
 	height: 30px;
+    color: darkred;
 }
 footer {
 	color: #cccccc;
@@ -35,4 +36,17 @@ footer {
 	height: 1px;
 	width: 100%;
 
+}
+#header {
+background-color: white;
+	padding: 3%;
+    opacity: 0.2;
+    color: black;
+}
+#code {
+    padding: 3%;
+    color: dimgrey;
+}
+input {
+    color:  grey;
 }
